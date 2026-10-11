@@ -1,0 +1,21 @@
+{
+  "name": "employed",
+  "displayName": "Employed by Guaq AI",
+  "description": "Search live jobs verified on real employer ATS boards, research employers' hiring, and brief hiring markets with Employed by Guaq AI.",
+  "homepage": "https://jobs.guaqai.me",
+  "repository": "https://github.com/Guaq-AI/employed-plugins",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "jobs",
+    "job-search",
+    "hiring",
+    "careers",
+    "internships",
+    "new-grad"
+  ],
+  "mcpServers": {
+    "employed": {
+      "url": "https://jobs.guaqai.me/mcp"
+    }
+  }
+}

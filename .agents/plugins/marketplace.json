@@ -1,0 +1,20 @@
+{
+  "name": "employed-plugins",
+  "interface": {
+    "displayName": "Employed by Guaq AI"
+  },
+  "plugins": [
+    {
+      "name": "employed",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

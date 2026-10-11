@@ -1,0 +1,8 @@
+# DeepSeek Harness bundle layer. Applied when a profile lists this package in its
+# `dsh.profile.bundles`; see `dsh.bundle` in the repository package.json.
+#
+# One row: the plugin mounts the skill provider and the Employed MCP server itself,
+# because the API key comes from dsh's managed credential document.
+- insert:
+    - id: employed
+      name: "employed-plugins/.dsh-plugin/index.mjs"

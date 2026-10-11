@@ -1,0 +1,21 @@
+# Smithery configuration for Employed by Guaq AI
+# See https://smithery.ai/docs/config#smitheryyaml
+# Remote (OAuth) users should connect to https://jobs.guaqai.me/mcp directly; this stdio entry is the API-key fallback.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - GUAQ_API_KEY
+    properties:
+      GUAQ_API_KEY:
+        type: string
+        description: "Employed by Guaq AI API key (create one at https://jobs.guaqai.me/profile)"
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'employed-mcp@1.0.3'],
+      env: {
+        GUAQ_API_KEY: config.GUAQ_API_KEY
+      }
+    })

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "mcpServers": {
+    "employed": {
+      "type": "streamable-http",
+      "url": "https://jobs.guaqai.me/mcp",
+      "description": "Search live job postings and employer hiring data from Employed by Guaq AI",
+      "timeout": 30000
+    }
+  }
+}

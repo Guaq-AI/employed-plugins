@@ -1,0 +1,28 @@
+{
+  "name": "employed",
+  "version": "1.1.0",
+  "description": "Search live jobs verified on real employer ATS boards, research employers' hiring, and brief hiring markets with Employed by Guaq AI.",
+  "author": {
+    "name": "Guaq AI",
+    "email": "support@guaqai.me",
+    "url": "https://jobs.guaqai.me"
+  },
+  "homepage": "https://jobs.guaqai.me",
+  "repository": "https://github.com/Guaq-AI/employed-plugins",
+  "license": "MIT",
+  "keywords": [
+    "jobs",
+    "job-search",
+    "hiring",
+    "careers",
+    "internships",
+    "new-grad",
+    "ats",
+    "market-intelligence",
+    "mcp",
+    "employers",
+    "resume"
+  ],
+  "displayName": "Employed by Guaq AI",
+  "logo": "assets/logo.png"
+}

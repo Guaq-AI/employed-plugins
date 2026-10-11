@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "name": "employed",
+  "displayName": "Employed by Guaq AI",
+  "version": "1.1.0",
+  "description": "Search live jobs verified on real employer ATS boards, research employers' hiring, and brief hiring markets with Employed by Guaq AI.",
+  "author": "Guaq AI",
+  "icon": "assets/icon-512.png",
+  "category": "Business",
+  "exampleQueries": [
+    "Find entry-level backend roles in India.",
+    "Which companies are hiring Rust engineers remotely?",
+    "Is Stripe hiring in London right now?"
+  ],
+  "apps": [],
+  "mcpServers": [
+    "employed.mcp.json"
+  ],
+  "skills": [
+    "skills/employed-jobs/SKILL.md",
+    "skills/job-search-from-resume/SKILL.md",
+    "skills/employer-research/SKILL.md",
+    "skills/hiring-market-brief/SKILL.md",
+    "skills/application-tracker/SKILL.md"
+  ]
+}
