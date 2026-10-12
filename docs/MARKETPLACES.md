@@ -39,5 +39,5 @@ What each platform requires, which file in this bundle satisfies it, and the sou
 ## Remaining gaps (need the server work or a human)
 
 - `https://jobs.guaqai.me/mcp` must answer 401 with a `WWW-Authenticate: Bearer resource_metadata=...` header, and ideally allow unauthenticated `initialize` and `tools/list`, so store scanners (Mistral, OpenAI, Claude, MiniMax) can discover tools. On 2026-10-11 it returned a bare 401 JSON body.
-- Public URLs assumed: `/privacy`, `/terms`, `/support`, `/docs/mcp`, `/assets/brand/logo.svg`, `/assets/brand/icon-512.png`, `/.well-known/openai-apps-challenge`, `/.well-known/mcp-registry-auth`.
+- Public URLs assumed: `/privacy-policy`, `/terms-of-service`, `/support`, `/connectors`, `/assets/brand/logo.svg`, `/assets/brand/icon-512.png`, `/.well-known/openai-apps-challenge`, `/.well-known/mcp-registry-auth`.
 - Screenshots (`screenshots/README.md`) and a demo video are needed for OpenAI, Microsoft, MiniMax and Kiro.

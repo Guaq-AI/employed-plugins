@@ -1,6 +1,6 @@
 # Install guide
 
-The connector is a remote MCP server: **`https://jobs.guaqai.me/mcp`** (Streamable HTTP). Sign in with OAuth in the browser (free Employed account), or send an API key from <https://jobs.guaqai.me/profile> as `Authorization: Bearer <key>` on hosts without OAuth. The skills, agents and commands add know-how on top; the connector alone already works.
+The connector is a remote MCP server: **`https://jobs.guaqai.me/mcp`** (Streamable HTTP). Sign in with OAuth in the browser (an Employed account: free accounts get a limited trial of calls, Pro or Ultimate for regular use), or send an API key from <https://jobs.guaqai.me/profile> as `Authorization: Bearer <key>` on hosts without OAuth. The skills, agents and commands add know-how on top; the connector alone already works.
 
 Commands below were checked against each platform's documentation on 2026-10-11; see [MARKETPLACES.md](MARKETPLACES.md) for sources. Where a platform has no command-line install, the UI steps are given.
 

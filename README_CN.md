@@ -21,7 +21,7 @@ ZCode：**设置、插件、创建、添加市场**，来源填写 `Guaq-AI/empl
 
 调用工具时，连接器只会向 `https://jobs.guaqai.me` 发送智能体选择的搜索条件和 ID（例如 `role_type=new_grad`、`location_scope=india`、公司名称、职位 ID）以及你的登录令牌。不会发送你的简历、文件、对话内容或本机的任何信息。技能只是文字说明，不含代码。
 
-[隐私政策](https://jobs.guaqai.me/privacy)，[服务条款](https://jobs.guaqai.me/terms)，支持：<https://jobs.guaqai.me/support>。
+[隐私政策](https://jobs.guaqai.me/privacy-policy)，[服务条款](https://jobs.guaqai.me/terms-of-service)，支持：<https://jobs.guaqai.me/support>。
 
 ## 如实说明
 

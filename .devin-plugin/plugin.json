@@ -4,7 +4,7 @@
   "description": "Search live jobs verified on real employer ATS boards, research employers' hiring, and brief hiring markets with Employed by Guaq AI.",
   "homepage": "https://jobs.guaqai.me",
   "repository": "https://github.com/Guaq-AI/employed-plugins",
-  "logo": "assets/logo.png",
+  "logo": "assets/logo-square-512.png",
   "keywords": [
     "jobs",
     "job-search",

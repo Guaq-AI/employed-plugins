@@ -23,7 +23,7 @@ Or use the CLI: `cline mcp add employed https://jobs.guaqai.me/mcp --transport h
 
 ## 2. Authenticate
 
-The server supports OAuth in the browser. Start the authorization for the `employed` server (Cline: **Authorize OAuth** in `cline mcp`, or the Authenticate button on the server card), sign in to Employed (a free account is enough) and approve access.
+The server supports OAuth in the browser. Start the authorization for the `employed` server (Cline: **Authorize OAuth** in `cline mcp`, or the Authenticate button on the server card), sign in to Employed (a free account includes a limited trial of calls; regular use needs Pro or Ultimate) and approve access.
 
 If your Cline version cannot do OAuth for remote servers, ask the user to create an API key at https://jobs.guaqai.me/profile and add this to the entry. Never write the key into a file that is committed, and never echo it back:
 
@@ -40,4 +40,4 @@ Call `api_meta`. It returns the user's plan, remaining quota and the exact filte
 - Dependencies: none. No Node.js or Python is needed for the remote server.
 - The tools are read-only. `export_jobs` writes a file and needs a higher plan; leave it out of `autoApprove`.
 - Optional stdio fallback for hosts without remote support: `npx -y employed-mcp@1.0.3` with the environment variable `GUAQ_API_KEY` set (needs Node.js 16+ and Python 3.8+).
-- Privacy: https://jobs.guaqai.me/privacy. Support: https://jobs.guaqai.me/support.
+- Privacy: https://jobs.guaqai.me/privacy-policy. Support: https://jobs.guaqai.me/support.

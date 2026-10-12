@@ -34,7 +34,7 @@ Live job search for AI agents. [Employed by Guaq AI](https://jobs.guaqai.me) ind
 | Antigravity | `agy plugin install https://github.com/Guaq-AI/employed-plugins` |
 | Cursor, Kiro, Devin, Qoder, ZCode, MiniMax, Hermes, OpenClaw, Cline, DeepSeek Harness, Mistral Vibe, OpenHands, Microsoft 365 Copilot | See [docs/INSTALL.md](docs/INSTALL.md) |
 
-Every route needs a free Employed account to sign in (OAuth in the browser). API keys from your [profile page](https://jobs.guaqai.me/profile) work too, for hosts without OAuth.
+Every route signs in with an Employed account (OAuth in the browser). Free accounts include a limited trial of connector calls; regular use needs a Pro or Ultimate plan, bought on the website. API keys from your [profile page](https://jobs.guaqai.me/profile) work too, for hosts without OAuth.
 
 ## Try it
 
@@ -47,7 +47,7 @@ Every route needs a free Employed account to sign in (OAuth in the browser). API
 
 When your agent calls a tool, the connector sends **the search filters and ids the agent chose** (for example `role_type=new_grad`, `location_scope=india`, a company name, a posting id) and your sign-in token to `https://jobs.guaqai.me`. It does not send your resume, files, conversation, or anything from your machine. Skills are plain instructions; they contain no code. The optional `npx` launcher described in [docs/INSTALL.md](docs/INSTALL.md) runs the open-source `employed-mcp` package, pinned to an exact version, and talks to the same service.
 
-Read the [privacy policy](https://jobs.guaqai.me/privacy) and [terms](https://jobs.guaqai.me/terms). Support: <https://jobs.guaqai.me/support> or support@guaqai.me.
+Read the [privacy policy](https://jobs.guaqai.me/privacy-policy) and [terms](https://jobs.guaqai.me/terms-of-service). Support: <https://jobs.guaqai.me/support> or support@guaqai.me.
 
 ## Honest by design
 

@@ -29,7 +29,7 @@
       "interface": {
         "displayName": "Employed by Guaq AI",
         "shortDescription": "Live jobs from verified ATS",
-        "longDescription": "Employed by Guaq AI is a live job index built from about 5,000 verified employer applicant-tracking boards (Greenhouse, Lever, Workday, Ashby, SmartRecruiters and more). Search roles by domain, seniority, location, work mode, technology and visa signal, open an employer's hiring profile, and turn the data into a short hiring-market brief. Every role links to the employer's own apply page. Visa sponsorship marked likely is an inference from posting text, not a guarantee. The connector only reads data and sends the filters you ask for to jobs.guaqai.me; it never applies to jobs or contacts anyone.",
+        "longDescription": "Employed by Guaq AI is a live job index built from about 5,000 verified employer applicant-tracking boards (Greenhouse, Lever, Workday, Ashby, SmartRecruiters and more). Search roles by domain, seniority, location, work mode, technology and visa signal, open an employer's hiring profile, and turn the data into a short hiring-market brief. Every role links to the employer's own apply page. Visa sponsorship marked likely is an inference from posting text, not a guarantee. The connector only reads data and sends the filters you ask for to jobs.guaqai.me; it never applies to jobs or contacts anyone. Sign in with an Employed account: free accounts include a limited trial of connector calls, and regular use needs a Pro or Ultimate plan, bought on the website (nothing is sold inside the connector).",
         "developerName": "Guaq AI",
         "category": "Productivity",
         "capabilities": [
@@ -39,8 +39,8 @@
         ],
         "websiteURL": "https://jobs.guaqai.me",
         "supportURL": "https://jobs.guaqai.me/support",
-        "privacyPolicyURL": "https://jobs.guaqai.me/privacy",
-        "termsOfServiceURL": "https://jobs.guaqai.me/terms",
+        "privacyPolicyURL": "https://jobs.guaqai.me/privacy-policy",
+        "termsOfServiceURL": "https://jobs.guaqai.me/terms-of-service",
         "defaultPrompt": [
           "Find entry-level backend roles in India.",
           "Which companies are hiring Rust engineers remotely?",
@@ -49,7 +49,13 @@
         "brandColor": "#14110F",
         "brandColorDark": "#CCFF33",
         "composerIcon": "./assets/icon-192.png",
-        "logo": "./assets/logo.png"
+        "logo": "./assets/logo-square-1024.png",
+        "screenshots": [
+          "./assets/screenshots/1-job-search.png",
+          "./assets/screenshots/2-employer-profile.png",
+          "./assets/screenshots/3-internships.png",
+          "./assets/screenshots/4-job-detail.png"
+        ]
       },
       "onboardingSkill": "./skills/employed-jobs/SKILL.md"
     }

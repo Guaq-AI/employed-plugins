@@ -24,9 +24,9 @@
     "employers",
     "resume"
   ],
-  "icon": "./assets/icon-512.png",
-  "documentationUrl": "https://jobs.guaqai.me/docs/mcp",
+  "icon": "./assets/logo-square-512.png",
+  "documentationUrl": "https://jobs.guaqai.me/connectors",
   "supportUrl": "https://jobs.guaqai.me/support",
-  "privacyPolicyUrl": "https://jobs.guaqai.me/privacy",
-  "termsOfServiceUrl": "https://jobs.guaqai.me/terms"
+  "privacyPolicyUrl": "https://jobs.guaqai.me/privacy-policy",
+  "termsOfServiceUrl": "https://jobs.guaqai.me/terms-of-service"
 }
