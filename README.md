@@ -6,7 +6,7 @@ Live job search for AI agents. [Employed by Guaq AI](https://jobs.guaqai.me) ind
 
 ## What you get
 
-- **A remote MCP connector** at `https://jobs.guaqai.me/mcp` with eight tools: `search_jobs`, `count_jobs`, `get_job`, `list_companies`, `company_profile`, `market_signal`, `export_jobs`, `api_meta`.
+- **A remote MCP connector** at `https://jobs.guaqai.me/mcp`. Search tools: `search_jobs`, `count_jobs`, `get_job`, `list_companies`, `company_profile`, `market_signal`, `api_meta` (plus `export_jobs` on the local `npx` server). Your own account: `get_my_profile`, `update_my_profile`, `profile_options`, `get_my_feed`, `list_my_applications`, `track_job`, `untrack_job`, `get_my_alerts`, `follow_company`, `unfollow_company`, `set_email_alerts`, so you can set up your profile from a CV, read your ranked feed and track applications without leaving the chat.
 - **Five skills** that teach the agent how to use it well:
 
   | Skill | Use it to |
@@ -45,7 +45,7 @@ Every route signs in with an Employed account (OAuth in the browser). Free accou
 
 ## Data this plugin sends
 
-When your agent calls a tool, the connector sends **the search filters and ids the agent chose** (for example `role_type=new_grad`, `location_scope=india`, a company name, a posting id) and your sign-in token to `https://jobs.guaqai.me`. It does not send your resume, files, conversation, or anything from your machine. Skills are plain instructions; they contain no code. The optional `npx` launcher described in [docs/INSTALL.md](docs/INSTALL.md) runs the open-source `employed-mcp` package, pinned to an exact version, and talks to the same service.
+When your agent calls a tool, the connector sends **the search filters and ids the agent chose** (for example `role_type=new_grad`, `location_scope=india`, a company name, a posting id) and your sign-in token to `https://jobs.guaqai.me`, plus, when you ask it to update your profile or tracker, the profile fields or status you agreed to. It does not send your resume file, conversation, or anything else from your machine. Skills are plain instructions; they contain no code. The optional `npx` launcher described in [docs/INSTALL.md](docs/INSTALL.md) runs the open-source `employed-mcp` package, pinned to an exact version, and talks to the same service.
 
 Read the [privacy policy](https://jobs.guaqai.me/privacy-policy) and [terms](https://jobs.guaqai.me/terms-of-service). Support: <https://jobs.guaqai.me/support> or support@guaqai.me.
 

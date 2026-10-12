@@ -2,12 +2,13 @@
   "schemaVersion": 1,
   "name": "employed",
   "displayName": "Employed by Guaq AI",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Search live jobs verified on real employer ATS boards, research employers' hiring, and brief hiring markets with Employed by Guaq AI.",
   "author": "Guaq AI",
   "icon": "assets/icon-512.png",
   "category": "Business",
   "exampleQueries": [
+    "Set up my Employed profile from this CV and show my best matches.",
     "Find entry-level backend roles in India.",
     "Which companies are hiring Rust engineers remotely?",
     "Is Stripe hiring in London right now?"

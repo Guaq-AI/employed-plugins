@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "Official marketplace for Employed by Guaq AI plugins and agent tools.",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "employed",
       "source": "./",
       "description": "Search live jobs verified on real employer ATS boards, research employers' hiring, and brief hiring markets with Employed by Guaq AI.",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Guaq AI",
         "email": "support@guaqai.me",

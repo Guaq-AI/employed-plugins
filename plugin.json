@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "employed",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Search live jobs verified on real employer ATS boards, research employers' hiring, and brief hiring markets with Employed by Guaq AI.",
   "author": {
     "name": "Guaq AI",
@@ -29,19 +29,22 @@
       "interface": {
         "displayName": "Employed by Guaq AI",
         "shortDescription": "Live jobs from verified ATS",
-        "longDescription": "Employed by Guaq AI is a live job index built from about 5,000 verified employer applicant-tracking boards (Greenhouse, Lever, Workday, Ashby, SmartRecruiters and more). Search roles by domain, seniority, location, work mode, technology and visa signal, open an employer's hiring profile, and turn the data into a short hiring-market brief. Every role links to the employer's own apply page. Visa sponsorship marked likely is an inference from posting text, not a guarantee. The connector only reads data and sends the filters you ask for to jobs.guaqai.me; it never applies to jobs or contacts anyone. Sign in with an Employed account: free accounts include a limited trial of connector calls, and regular use needs a Pro or Ultimate plan, bought on the website (nothing is sold inside the connector).",
+        "longDescription": "Employed by Guaq AI is a live job index built from about 5,000 verified employer applicant-tracking boards (Greenhouse, Lever, Workday, Ashby, SmartRecruiters and more). Search roles by domain, seniority, location, work mode, technology and visa signal, open an employer's hiring profile, and turn the data into a short hiring-market brief. Every role links to the employer's own apply page. Visa sponsorship marked likely is an inference from posting text, not a guarantee. Your own Employed account is in the chat too: paste a CV and the assistant fills in your profile, then shows your ranked feed, saves roles to your tracker, records each application's status and follows employers for new-role alerts, only when you ask. It never applies to jobs or contacts anyone. Sign in with an Employed account: your profile, feed and tracker are free; search tools include a limited free trial, and regular use needs a Pro or Ultimate plan, bought on the website (nothing is sold inside the connector).",
         "developerName": "Guaq AI",
         "category": "Productivity",
         "capabilities": [
           "Search job postings",
           "Research employer hiring",
-          "Brief hiring markets"
+          "Brief hiring markets",
+          "Set up your job-search profile",
+          "Track your applications"
         ],
         "websiteURL": "https://jobs.guaqai.me",
         "supportURL": "https://jobs.guaqai.me/support",
         "privacyPolicyURL": "https://jobs.guaqai.me/privacy-policy",
         "termsOfServiceURL": "https://jobs.guaqai.me/terms-of-service",
         "defaultPrompt": [
+          "Set up my Employed profile from this CV and show my best matches.",
           "Find entry-level backend roles in India.",
           "Which companies are hiring Rust engineers remotely?",
           "Is Stripe hiring in London right now?"

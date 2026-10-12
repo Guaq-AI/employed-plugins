@@ -4,7 +4,7 @@ description: Produce a short hiring-market brief from Employed by Guaq AI data. 
 license: MIT
 metadata:
   author: Guaq AI
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Hiring market brief
