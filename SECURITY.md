@@ -10,9 +10,8 @@ This repository holds manifests, skills, agent and command prompts, icons and do
 
 ## What this bundle does and does not do
 
-- It connects an agent to the remote MCP server `https://jobs.guaqai.me/mcp`. The only data sent is the search filters and ids the agent chooses plus your sign-in token or API key.
-- It has no hooks and runs no code on your machine. The DeepSeek Harness bundle in `.dsh-plugin/` is the one JavaScript file; it only mounts the skills and the remote server and stores your API key through dsh's credential store.
-- The optional `npx` launcher is pinned to an exact version of `employed-mcp`.
+- It connects an agent to the remote MCP server `https://jobs.guaqai.me/mcp`. The only data sent is the search filters, ids and profile fields the agent chooses plus the OAuth sign-in token your agent holds.
+- It has no hooks, runs no code on your machine and reads no credential from your environment or files. (The DeepSeek Harness bundle, which signs in with an API key, lives in its own repository, Guaq-AI/employed-dsh.)
 - Skills instruct the agent to treat job-posting text as untrusted data and never to apply, send messages or write files without your approval.
 
 ## Supported versions

@@ -10,15 +10,9 @@
     "url": "git+https://github.com/Guaq-AI/employed-plugins.git"
   },
   "keywords": [
-    "dsh-plugin",
     "mcp",
     "jobs",
     "job-search",
     "hiring"
-  ],
-  "dsh": {
-    "bundle": {
-      "patch": "./.dsh-plugin/cordis.patch.yml"
-    }
-  }
+  ]
 }

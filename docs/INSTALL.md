@@ -1,6 +1,6 @@
 # Install guide
 
-The connector is a remote MCP server: **`https://jobs.guaqai.me/mcp`** (Streamable HTTP). Sign in with OAuth in the browser (an Employed account: free accounts get a limited trial of calls, Pro or Ultimate for regular use), or send an API key from <https://jobs.guaqai.me/profile> as `Authorization: Bearer <key>` on hosts without OAuth. The skills, agents and commands add know-how on top; the connector alone already works.
+The connector is a remote MCP server: **`https://jobs.guaqai.me/mcp`** (Streamable HTTP). Sign in with OAuth in the browser (an Employed account: free accounts get a limited trial of calls, Pro or Ultimate for regular use). Every host below signs in that way. For a host without OAuth, the API-key setup is at <https://jobs.guaqai.me/docs>. The skills, agents and commands add know-how on top; the connector alone already works.
 
 Commands below were checked against each platform's documentation on 2026-10-11; see [MARKETPLACES.md](MARKETPLACES.md) for sources. Where a platform has no command-line install, the UI steps are given.
 
@@ -15,8 +15,6 @@ Commands below were checked against each platform's documentation on 2026-10-11;
 ```
 
 Pick `employed`, then **Authenticate**. Slash commands appear as `/employed:find-jobs`, `/employed:company`, `/employed:market`. For a one-off run from a checkout: `claude --plugin-dir ./employed-plugins`.
-
-API key instead of OAuth: `claude mcp add --transport http employed https://jobs.guaqai.me/mcp --header "Authorization: Bearer $GUAQ_API_KEY"`.
 
 ### Claude.ai and Claude Desktop
 
@@ -104,23 +102,15 @@ Upload the package built by `scripts/build.py zip` (`employed-m365-cowork.zip`) 
 | Mistral Vibe Work | **Connectors, Add Connector, Custom MCP Connector**, name `employed`, URL `https://jobs.guaqai.me/mcp` (administrator step; authentication is detected automatically) |
 | OpenClaw | `openclaw mcp set employed '{"url":"https://jobs.guaqai.me/mcp","auth":"oauth"}'` then `openclaw mcp login employed`; skills via `clawhub skill install employed-jobs` once published |
 | OpenHands | Copy `.mcp.json` into the workspace, or install the plugin directory (`.plugin/plugin.json`) with the SDK `install_plugin` helper |
-| DeepSeek Harness | `dsh plugin --profile web add github:Guaq-AI/employed-plugins`, then `/employed-login <api-key>` inside a session |
+| DeepSeek Harness | Its bundle has its own repository, [Guaq-AI/employed-dsh](https://github.com/Guaq-AI/employed-dsh), with the install steps (dsh has no OAuth, so it signs in with an API key) |
 | VS Code, JetBrains Junie, other registry clients | Install `me.guaqai.jobs/employed` from the official MCP Registry once published |
 
 ## Optional stdio launcher
 
-For hosts that cannot reach a remote URL, the same tools run locally through the open-source `employed-mcp` package (Node.js 16+, Python 3.8+). The version is pinned on purpose:
-
-```bash
-GUAQ_API_KEY=... npx -y employed-mcp@1.2.0
-```
-
-```json
-{ "mcpServers": { "employed": { "command": "npx", "args": ["-y", "employed-mcp@1.2.0"], "env": { "GUAQ_API_KEY": "..." } } } }
-```
+For hosts that cannot reach a remote URL, the same tools run locally through the open-source `employed-mcp` npm package (Node.js 16+, Python 3.8+), pinned to `1.2.0`. It signs in with an API key; the setup is at <https://jobs.guaqai.me/docs>. This plugin does not install or run it.
 
 ## Troubleshooting
 
-- **401 or "Authentication required"**: sign in again (`/mcp` in Claude Code), or check that the API key is current at <https://jobs.guaqai.me/profile>.
+- **401 or "Authentication required"**: sign in again (`/mcp` in Claude Code).
 - **A search returns 0 rows**: a filter value is probably misspelled. Ask the agent to call `api_meta` and retry; see `skills/employed-jobs/references/filters.md`.
 - **"Plan does not include market signals"**: `market_signal` and `export_jobs` need a higher plan; everything else works on the free plan.
