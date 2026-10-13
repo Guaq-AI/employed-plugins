@@ -1,0 +1,29 @@
+{
+  "name": "employed",
+  "version": "1.2.0",
+  "description": "Search live jobs verified on real employer ATS boards, research employers' hiring, and brief hiring markets with Employed by Guaq AI.",
+  "keywords": [
+    "jobs",
+    "job-search",
+    "hiring",
+    "careers",
+    "internships",
+    "new-grad"
+  ],
+  "author": "Guaq AI",
+  "homepage": "https://jobs.guaqai.me",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Employed by Guaq AI",
+    "shortDescription": "Live jobs and employer hiring data",
+    "longDescription": "Employed by Guaq AI is a live job index built from about 5,000 verified employer applicant-tracking boards (Greenhouse, Lever, Workday, Ashby, SmartRecruiters and more). Search roles by domain, seniority, location, work mode, technology and visa signal, open an employer's hiring profile, and turn the data into a short hiring-market brief. Every role links to the employer's own apply page. Visa sponsorship marked likely is an inference from posting text, not a guarantee. Your own Employed account is in the chat too: paste a CV and the assistant fills in your profile, then shows your ranked feed, saves roles to your tracker, records each application's status and follows employers for new-role alerts, only when you ask. It never applies to jobs or contacts anyone. Sign in with your Employed account.",
+    "developerName": "Guaq AI",
+    "websiteURL": "https://jobs.guaqai.me"
+  },
+  "skills": "./skills/",
+  "mcpServers": {
+    "employed": {
+      "url": "https://jobs.guaqai.me/mcp"
+    }
+  }
+}

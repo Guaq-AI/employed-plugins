@@ -32,7 +32,7 @@ Live job search for AI agents. [Employed by Guaq AI](https://jobs.guaqai.me) ind
 | Qwen Code | `qwen extensions install https://github.com/Guaq-AI/employed-plugins:employed` |
 | Gemini CLI | `gemini extensions install https://github.com/Guaq-AI/employed-plugins` |
 | Antigravity | `agy plugin install https://github.com/Guaq-AI/employed-plugins` |
-| Cursor, Kiro, Devin, Qoder, ZCode, MiniMax, Hermes, OpenClaw, Cline, Mistral Vibe, OpenHands, Microsoft 365 Copilot | See [docs/INSTALL.md](docs/INSTALL.md) |
+| Cursor, Kiro, Kimi Code, OpenCode, Warp, Traycer, Devin, Qoder, ZCode, MiniMax, Hermes, OpenClaw, Cline, Mistral Vibe, OpenHands, Microsoft 365 Copilot | See [docs/INSTALL.md](docs/INSTALL.md) |
 | DeepSeek Harness | See [Guaq-AI/employed-dsh](https://github.com/Guaq-AI/employed-dsh) |
 
 Every route signs in with an Employed account (OAuth in the browser). API keys from your [profile page](https://jobs.guaqai.me/profile) work too, for hosts without OAuth.
@@ -62,7 +62,7 @@ Read the [privacy policy](https://jobs.guaqai.me/privacy-policy) and [terms](htt
 ```
 .claude-plugin/        Claude Code plugin and marketplace manifests
 plugin.json, mcp.json  Agent Plugins 1.0.0 (Copilot CLI, Cursor, Kiro, Codex, Hermes, Qwen)
-.cursor-plugin/ .qoder-plugin/ .zcode-plugin/ .devin-plugin/ .minimax-plugin/ .plugin/   per-platform manifests
+.cursor-plugin/ .kimi-plugin/ .qoder-plugin/ .zcode-plugin/ .devin-plugin/ .minimax-plugin/ .plugin/   per-platform manifests
 skills/ agents/ commands/   shared content
 assets/ screenshots/   icons and store screenshots
 mcp-registry/          server.json for the official MCP Registry

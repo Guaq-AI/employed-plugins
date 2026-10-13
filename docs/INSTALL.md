@@ -69,6 +69,35 @@ Codex: add this repository as a marketplace (`.agents/plugins/marketplace.json` 
 
 **Settings, Marketplace**, pick Employed once it is listed, or install from the repository with `devin plugins install --local ./employed-plugins`. Manifest: `.devin-plugin/plugin.json`.
 
+### Kimi Code CLI
+
+```text
+/plugins install https://github.com/Guaq-AI/employed-plugins
+```
+
+Then `/reload`. Kimi reads `.kimi-plugin/plugin.json` (the skills and the remote server). Sign in to Employed when the server first asks.
+
+### OpenCode
+
+Add the server to `opencode.json` (project) or `~/.config/opencode/opencode.json` (global), then run `opencode mcp auth employed` to sign in:
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": { "employed": { "type": "remote", "url": "https://jobs.guaqai.me/mcp" } }
+}
+```
+
+OpenCode also loads skills from `.agents/skills/` and `.claude/skills/`: copy `skills/*` into either for the workflows.
+
+### Warp
+
+**Settings, MCP servers, + Add**, then paste `{"employed": {"url": "https://jobs.guaqai.me/mcp"}}`. Warp opens the Employed sign-in in the browser the first time the server starts. For the skills, copy `skills/*` into `~/.agents/skills/`.
+
+### Traycer
+
+On the Traycer Platform, **Remote MCP Servers, Add Custom MCP**: name `employed`, URL `https://jobs.guaqai.me/mcp`, authentication **OAuth**. Add it to an organization account to share it with the team.
+
 ### Qoder
 
 `qoder plugins marketplace add Guaq-AI/employed-plugins`, then `qoder plugins install employed`. Manifest: `.qoder-plugin/plugin.json`.
