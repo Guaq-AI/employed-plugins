@@ -136,7 +136,7 @@ Upload the package built by `scripts/build.py zip` (`employed-m365-cowork.zip`) 
 
 ## Optional stdio launcher
 
-For hosts that cannot reach a remote URL, the same tools run locally through the open-source `employed-mcp` npm package (Node.js 16+, Python 3.8+), pinned to `1.2.0`. It signs in with an API key; the setup is at <https://jobs.guaqai.me/docs>. This plugin does not install or run it.
+For hosts that cannot reach a remote URL, the same tools run locally through the open-source `employed-mcp` npm package (Node.js 16+, Python 3.8+), pinned to `1.2.1`. It signs in with an API key; the setup is at <https://jobs.guaqai.me/docs>. This plugin does not install or run it.
 
 ## Troubleshooting
 

@@ -14,7 +14,7 @@ startCommand:
   commandFunction: |-
     (config) => ({
       command: 'npx',
-      args: ['-y', 'employed-mcp@1.2.0'],
+      args: ['-y', 'employed-mcp@1.2.1'],
       env: {
         GUAQ_API_KEY: config.GUAQ_API_KEY
       }

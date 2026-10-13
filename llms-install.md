@@ -39,5 +39,5 @@ Call `api_meta`. It returns the user's plan, remaining quota and the exact filte
 
 - Dependencies: none. No Node.js or Python is needed for the remote server.
 - Search tools are read-only and safe to auto-approve. `update_my_profile`, `track_job`, `untrack_job`, `follow_company`, `unfollow_company` and `set_email_alerts` change the user's own Employed account, and `export_jobs` writes a file; leave those out of `autoApprove`.
-- Hosts without remote support can run the `employed-mcp@1.2.0` npm package locally instead (needs Node.js 16+ and Python 3.8+); its API-key setup is at https://jobs.guaqai.me/docs.
+- Hosts without remote support can run the `employed-mcp@1.2.1` npm package locally instead (needs Node.js 16+ and Python 3.8+); its API-key setup is at https://jobs.guaqai.me/docs.
 - Privacy: https://jobs.guaqai.me/privacy-policy. Support: https://jobs.guaqai.me/support.

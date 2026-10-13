@@ -3,7 +3,7 @@
   "name": "me.guaqai.jobs/employed",
   "title": "Employed by Guaq AI",
   "description": "Live jobs from ~5,000 employer ATS boards, hiring profiles, your job profile and tracker.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "websiteUrl": "https://jobs.guaqai.me",
   "repository": {
     "url": "https://github.com/Guaq-AI/employed-plugins",
@@ -29,7 +29,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "employed-mcp",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "transport": {
         "type": "stdio"
       },
