@@ -34,7 +34,7 @@ Live job search for AI agents. [Employed by Guaq AI](https://jobs.guaqai.me) ind
 | Antigravity | `agy plugin install https://github.com/Guaq-AI/employed-plugins` |
 | Cursor, Kiro, Devin, Qoder, ZCode, MiniMax, Hermes, OpenClaw, Cline, DeepSeek Harness, Mistral Vibe, OpenHands, Microsoft 365 Copilot | See [docs/INSTALL.md](docs/INSTALL.md) |
 
-Every route signs in with an Employed account (OAuth in the browser). Free accounts include a limited trial of connector calls; regular use needs a Pro or Ultimate plan, bought on the website. API keys from your [profile page](https://jobs.guaqai.me/profile) work too, for hosts without OAuth.
+Every route signs in with an Employed account (OAuth in the browser). API keys from your [profile page](https://jobs.guaqai.me/profile) work too, for hosts without OAuth.
 
 ## Try it
 

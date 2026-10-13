@@ -23,5 +23,25 @@
       "type": "streamable-http",
       "url": "https://jobs.guaqai.me/mcp"
     }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "employed-mcp",
+      "version": "1.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GUAQ_API_KEY",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string",
+          "description": "Employed API key from https://jobs.guaqai.me/profile (the remote server signs in with OAuth instead)."
+        }
+      ]
+    }
   ]
 }

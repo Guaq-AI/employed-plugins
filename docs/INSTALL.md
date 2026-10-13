@@ -112,11 +112,11 @@ Upload the package built by `scripts/build.py zip` (`employed-m365-cowork.zip`) 
 For hosts that cannot reach a remote URL, the same tools run locally through the open-source `employed-mcp` package (Node.js 16+, Python 3.8+). The version is pinned on purpose:
 
 ```bash
-GUAQ_API_KEY=... npx -y employed-mcp@1.0.3
+GUAQ_API_KEY=... npx -y employed-mcp@1.2.0
 ```
 
 ```json
-{ "mcpServers": { "employed": { "command": "npx", "args": ["-y", "employed-mcp@1.0.3"], "env": { "GUAQ_API_KEY": "..." } } } }
+{ "mcpServers": { "employed": { "command": "npx", "args": ["-y", "employed-mcp@1.2.0"], "env": { "GUAQ_API_KEY": "..." } } } }
 ```
 
 ## Troubleshooting
