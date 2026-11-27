@@ -2,6 +2,10 @@
 
 All notable changes to this plugin bundle. Versions follow semantic versioning; the version in every manifest is generated from one place (`scripts/build.py` in the source repository).
 
+## 1.3.0
+
+- Remote connector adds `hiring_intel` (read-only, organisation accounts): same-store hiring indices by ticker, employer, GICS sector/industry, market-cap band (mega..nano) and employee band; movers; emerging/declining skills and vendor share within a category; geography; stated visa sponsorship; posting lifecycle; hiring before earnings reports. 19 tools on the hosted connector.
+
 ## 1.1.0
 
 - First public release of the multi-marketplace bundle.

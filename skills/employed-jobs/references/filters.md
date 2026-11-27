@@ -18,6 +18,8 @@ Pass these as arguments to `search_jobs`, `count_jobs`, `list_companies` and `ex
 | `yoe_min`, `yoe_max` | Years-of-experience band. |
 | `grad_year` | Graduating cohort a new-grad role targets. |
 | `seen_after` | ISO date; only roles confirmed live on or after it. |
+| `seen_before` | ISO date; only roles last confirmed live before it. |
+| `posted_after` / `posted_before` | ISO date; the employer's posting date, else the day first seen. |
 | `limit`, `cursor` | `search_jobs` only: 1 to 50 rows (default 25) and the `next_cursor` from the previous page. |
 
 ## Worked examples

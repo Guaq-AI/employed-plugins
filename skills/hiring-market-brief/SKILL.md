@@ -17,6 +17,7 @@ Needs the `employed` MCP tools (see the `employed-jobs` skill). `market_signal` 
 2. **Size it** with `count_jobs` for the headline filter, then split it with a few more counts (by `location_scope`, `role_type`, `work_mode`, `visa`). Keep each count's filters visible in the brief so it can be reproduced.
 3. **Name the employers** with `list_companies` using the same filters. Report the top 10 with counts and the share of the total they hold.
 4. **Add signals if the plan allows**: `market_signal` with `overview`, `technologies`, `flow`, `india`, `gcc`, `quant`, `it_services`, `semis`, `sector` or `function_mix`. If refused, say the plan does not include it and continue without.
+   For trends over time (organisation accounts), use `hiring_intel`: `series` or `compare` for same-store indices of a ticker (`T:NVDA`), sector (`S:Financials`), market-cap band (`M:large`) or employer; `movers` with `group=sector` or `group=cap_band` for who is surging; `sectors` with `level=cap_band` to compare large and small caps; `skill_trends` for emerging and declining skills, or `category=data_platform` (or `cloud`, `bi`, `crm`) for vendor share. Quote the `as_of` date and say changes are same-store (new or repaired boards excluded).
 5. **Write the brief**: a headline number, 3 to 5 findings, a small table, and a limits section. Offer an `export_jobs` file only if the user wants the raw rows and approves the path.
 
 ## Limits to state every time
